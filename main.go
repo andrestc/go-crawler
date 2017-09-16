@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 	"strings"
+
+	_ "golang.org/x/net/html"
 )
 
 func main() {
