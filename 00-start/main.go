@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"os"
 	"strings"
 
 	_ "golang.org/x/net/html"
@@ -10,11 +11,15 @@ import (
 func main() {
 	var seeds []string
 
-	// read seeds from command line arguments
+	seeds = os.Args[1:]
 
 	fmt.Printf("Starting crawler with seeds: %s\n", strings.Join(seeds, ", "))
 
-	// start go routines to follow seeds
+	/* for each seed:
+	get their content - net/http
+	parse their content and find links golang.org/x/net/html
+	store the links found
+	*/
 
-	// output all pages visited
+	// output all links found
 }
