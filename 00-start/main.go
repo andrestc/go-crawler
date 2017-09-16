@@ -12,7 +12,7 @@ func main() {
 
 	// read seeds from command line arguments
 
-	fmt.Println("Starting crawler with seeds: %s", strings.Join(seeds, ", "))
+	fmt.Printf("Starting crawler with seeds: %s\n", strings.Join(seeds, ", "))
 
 	// start go routines to follow seeds
 
