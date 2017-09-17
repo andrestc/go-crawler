@@ -8,8 +8,6 @@ import (
 	"strings"
 
 	"golang.org/x/net/html"
-
-	_ "golang.org/x/net/html"
 )
 
 // This is our first solution.
